@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #263248;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+.navbar {
+    background: #252b48;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    letter-spacing: 1px;
+}
+
+.login-btn {
+    background: #7065e8;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #584bd0;
+    transform: translateY(-2px);
+}
+
+.login-section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.login-section h1 {
+    font-size: 38px;
+    color: #252b48;
+}
+
+.login-section p {
+    color: #68738a;
+    font-size: 17px;
+}
+
+.home-section {
+    padding: 45px 6%;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #252b48;
+}
+
+.home-section > p {
+    color: #68738a;
+    margin-bottom: 40px;
+}
+
+.home-section h2 {
+    margin-bottom: 25px;
+}
+
+.employee-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+    text-align: left;
+}
+
+.employee-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e8f0;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.employee-card h3 {
+    color: #6256d8;
+    margin-bottom: 18px;
+    font-size: 21px;
+}
+
+.employee-card p {
+    margin: 12px 0;
+    color: #596579;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 16px 5%;
+    }
+
+    .home-section {
+        padding: 30px 5%;
+    }
+
+    .home-section h1 {
+        font-size: 26px;
+    }
+
+    .login-section h1 {
+        font-size: 29px;
+    }
+}
