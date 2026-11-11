@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s ease;
+}
+
+.light {
+    background: #eef1f8;
+    color: #000000;
+}
+
+.dark {
+    background: #171a2b;
+    color: #ffffff;
+}
+
+.counter-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.light .counter-card {
+    background: #ffffff;
+}
+
+.dark .counter-card {
+    background: #272b42;
+}
+
+.counter-card h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+.counter-display {
+    font-size: 75px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.counter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    padding: 13px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.increment {
+    background: #16a36a;
+    color: #ffffff;
+}
+
+.decrement {
+    background: #e34d5b;
+    color: #ffffff;
+}
+
+.reset {
+    background: #e5e7ef;
+    color: #000000;
+}
+
+.theme-section {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #88888855;
+}
+
+.theme-section h3 {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.theme-btn {
+    background: #6558df;
+    color: #ffffff;
+    padding: 13px 22px;
+}
+
+@media (max-width: 480px) {
+    .counter-card {
+        padding: 30px 18px;
+    }
+
+    .counter-card h1 {
+        font-size: 26px;
+    }
+
+    .counter-display {
+        font-size: 60px;
+    }
+
+    .counter-buttons {
+        flex-direction: column;
+    }
+
+    .counter-buttons button {
+        width: 100%;
+    }
+}
