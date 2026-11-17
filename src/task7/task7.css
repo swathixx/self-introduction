@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f6fb;
+}
+
+.user-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #eef1ff, #f8f5ff);
+}
+
+.user-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    color: #292b55;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #777;
+    font-size: 15px;
+}
+
+.user-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.user-summary h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+.user-summary span {
+    background: #667eea;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.user-card {
+    background: white;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+    border: 1px solid #eeeeF5;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.user-card-header {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.user-id {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #eef0ff;
+    color: #667eea;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.user-avatar {
+    width: 65px;
+    height: 65px;
+    margin: 15px auto 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.user-card-header h3 {
+    color: #292b55;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.username {
+    color: #888;
+    font-size: 13px;
+}
+
+.user-details {
+    padding-top: 17px;
+}
+
+.user-details p {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 13px;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.user-details strong {
+    color: #555;
+}
+
+.user-details span {
+    color: #777;
+}
+
+.loading-message,
+.error-message {
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: white;
+}
+
+.loading-message {
+    color: #667eea;
+}
+
+.error-message {
+    color: #e63946;
+}
+
+@media (max-width: 900px) {
+    .user-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .user-page {
+        padding: 25px 14px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .user-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .user-summary h2 {
+        font-size: 19px;
+    }
+}
